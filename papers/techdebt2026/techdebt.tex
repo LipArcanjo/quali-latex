@@ -1,19 +1,13 @@
 \documentclass[sigconf]{acmart}
 \usepackage{graphicx,url}
 \usepackage{hyperref}
-\usepackage{nicematrix}
-\usepackage{array}
-\usepackage{seqsplit}
-\usepackage{todonotes}
 
-%% Takeaway Boxes %%
-\usepackage[most]{tcolorbox}
-\tcbset{colback=gray!10, colframe=gray!50!black, boxrule=0.5pt,
-        left=1mm, right=1mm, top=1mm, bottom=1mm, sharp corners}
-
+%% Takeaway Boxes - ACM Compatible %%
+\usepackage{framed}
 \newenvironment{highlight-box}[1]{%
-  \begin{tcolorbox}
-  \textbf{#1:} \itshape}{\end{tcolorbox}}
+  \begin{framed}%
+  \noindent\textbf{#1:} \itshape\ignorespaces}{%
+  \end{framed}}
 %% Takeaway Boxes %%
 
 % correct bad hyphenation here
@@ -36,8 +30,6 @@
 %}
 %\email{{luanicaro,marcelomspessoto,davidbtadokoro}@usp.br,paulormm@ime.usp.br}
 
-\maketitle
-
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
@@ -51,6 +43,8 @@ Our ethnographic approach, including complete participant observation and partic
 %
 Nevertheless, the study reveals a more intriguing and complex reality beyond mindlessly removing clones. An analysis of maintainer feedback on both accepted and rejected contributions highlights a nuanced understanding of technical debt due to code duplication within the Linux kernel community, where the benefits of eliminating duplications are carefully weighed against factors such as readability, the introduction of new abstractions, and the specific code context.
 \end{abstract}
+
+\maketitle
 
 \section{Introduction}
 \label{sec:introduction}
