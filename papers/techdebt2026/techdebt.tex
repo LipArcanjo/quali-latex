@@ -1,9 +1,8 @@
-\documentclass[10pt,conference]{IEEEtran}
+\documentclass[sigconf]{acmart}
 \usepackage{graphicx,url}
 \usepackage{hyperref}
 \usepackage{nicematrix}
 \usepackage{array}
-\usepackage[utf8]{inputenc}  
 \usepackage{seqsplit}
 \usepackage{todonotes}
 
@@ -23,25 +22,20 @@
 
 \begin{document}
 
-\title{When Do You Repeat Yourself?\\
-Voices from the Trenches of Linux Kernel Maintainers on Code Duplication}
+\title{When Do You Repeat Yourself? Voices from the Trenches of Linux Kernel Maintainers on Code Duplication}
 
+\author{Anonymous Authors}
 
-% author names and affiliations
-% use a multiple column layout for up to three different
-% affiliations
-
-\author{\IEEEauthorblockN{Anonymous Authors}}
-
-%\author{\IEEEauthorblockN{Luan Arcanjo, Marcelo Spessoto, David Tadokoro, Paulo Meirelles}
-%\IEEEauthorblockA{
-%Free Software Competence Center\\
-%Institute of Mathematics, Statistics, and Computer Science
-%Universidade de São Paulo, Brazil\\
-%\{luanicaro,marcelomspessoto,davidbtadokoro\}@usp.br,paulormm@ime.usp.br}
+%\author{Luan Arcanjo}
+%\author{Marcelo Spessoto}
+%\author{David Tadokoro}
+%\author{Paulo Meirelles}
+%\affiliation{
+%  \institution{Free Software Competence Center, Institute of Mathematics, Statistics, and Computer Science, Universidade de São Paulo}
+%  \country{Brazil}
 %}
+%\email{{luanicaro,marcelomspessoto,davidbtadokoro}@usp.br,paulormm@ime.usp.br}
 
-% make the title area
 \maketitle
 
 % As a general rule, do not put math, special symbols or citations
@@ -57,10 +51,6 @@ Our ethnographic approach, including complete participant observation and partic
 %
 Nevertheless, the study reveals a more intriguing and complex reality beyond mindlessly removing clones. An analysis of maintainer feedback on both accepted and rejected contributions highlights a nuanced understanding of technical debt due to code duplication within the Linux kernel community, where the benefits of eliminating duplications are carefully weighed against factors such as readability, the introduction of new abstractions, and the specific code context.
 \end{abstract}
-
-% no keywords
-
-\IEEEpeerreviewmaketitle
 
 \section{Introduction}
 \label{sec:introduction}
@@ -308,9 +298,8 @@ All anonymized threads containing the entire review process and interactions wit
 
 To avoid violating the double-anonymized review process, the anonymous repository of the developed tool is available at \url{https://anonymous.4open.science/r/arkanjo-C548}. The tool website link and omitted references will be added in the camera-ready version of the paper.
 
-\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-\bibliography{IEEEabrv,references}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
 
 \end{document}
 
